@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CoreLab — O aplicativo que transforma seu corpo e mente. Early Access disponível." />
+  <title>CoreLab — Forge Your Core</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;1,9..40,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- SPLASH -->
+<div id="splash">
+  <div class="splash-logo">CORE<span>LAB</span></div>
+  <div class="splash-bar"><div class="splash-bar-fill"></div></div>
+  <div class="splash-tag" id="splash-tag">Inicializando...</div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">CORE<span>LAB</span></a>
+  <div class="nav-spacer"></div>
+  <div class="nav-controls">
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="pt">PT</button>
+      <button class="lang-btn" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="theme-toggle" id="themeToggle" title="Alternar tema">🌙</button>
+    <button class="login-btn" id="loginBtn" title="Entrar na conta">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+        <circle cx="12" cy="7" r="4"/>
+      </svg>
+      <div class="avatar" id="userAvatar">CL</div>
+    </button>
+  </div>
+</nav>
+
+<!-- LOGIN MODAL -->
+<div id="login-overlay">
+  <div class="login-modal">
+    <button class="modal-close" id="closeModal">✕</button>
+    <div class="modal-tag" data-i18n="modal_tag">Acesso à conta</div>
+    <div class="modal-title" data-i18n="modal_title">BEM-VINDO DE VOLTA</div>
+    <div class="modal-field">
+      <label data-i18n="modal_email">Email</label>
+      <input type="email" id="loginEmail" placeholder="seu@email.com" />
+    </div>
+    <div class="modal-field">
+      <label data-i18n="modal_pass">Senha</label>
+      <input type="password" id="loginPass" placeholder="••••••••" />
+    </div>
+    <button class="modal-submit" id="submitLogin" data-i18n="modal_btn">ENTRAR</button>
+    <div class="modal-divider" data-i18n="modal_or">ou</div>
+    <div class="modal-footer-text">
+      <span data-i18n="modal_signup_label">Não tem conta? </span>
+      <span data-i18n="modal_signup_link">Criar conta grátis</span>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="dot"></div>
+      <span data-i18n="hero_eyebrow">Early Access — Vagas Limitadas</span>
+    </div>
+    <h1 class="hero-title">
+      <span data-i18n="hero_title_1">FORJE</span><br>
+      <span class="accent" data-i18n="hero_title_2">SEU</span>
+      <span class="stroke" data-i18n="hero_title_3">CORE</span>
+    </h1>
+    <p class="hero-sub" data-i18n="hero_sub">
+      O aplicativo que entende seu corpo. Treinos personalizados, acompanhamento em tempo real e uma comunidade que te impulsiona além dos seus limites.
+    </p>
+    <div class="hero-cta">
+      <a href="#early-access" class="btn-primary">
+        <span data-i18n="hero_cta1">Quero Early Access</span>
+        <span>→</span>
+      </a>
+      <a href="#sections" class="btn-secondary">
+        <span data-i18n="hero_cta2">Explorar</span>
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">10K+</div>
+        <div class="stat-label" data-i18n="stat1">na lista de espera</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">98%</div>
+        <div class="stat-label" data-i18n="stat2">satisfação</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5★</div>
+        <div class="stat-label" data-i18n="stat3">avaliação</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span data-i18n="scroll_hint">scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- BODY SECTIONS -->
+<div id="sections">
+
+  <!-- MENTE -->
+  <section class="body-section">
+    <div class="body-section-inner">
+      <div class="section-visual reveal-left">
+        <div class="section-visual-bg vis-mente">
+          <div class="vis-lines"></div>
+          <div class="vis-glow"></div>
+          <div class="vis-icon">🧠</div>
+          <div class="vis-badge">
+            <div class="vis-badge-dot"></div>
+            <div class="vis-badge-text" data-i18n="badge_mente">FOCO ATIVADO</div>
+          </div>
+        </div>
+      </div>
+      <div class="section-text reveal-right">
+        <div class="section-tag" data-i18n="tag_mente">01 — Mente</div>
+        <h2 class="section-title">
+          <span data-i18n="title_mente_1">TREINO</span><br>
+          <span class="accent" data-i18n="title_mente_2">MENTAL</span>
+        </h2>
+        <p class="section-body" data-i18n="body_mente">
+          Seu maior músculo é o cérebro. Técnicas de foco, respiração e mindfulness integradas ao seu treino para performance máxima.
+        </p>
+        <div class="section-chips">
+          <span class="chip" data-i18n="chip_foco">Foco</span>
+          <span class="chip" data-i18n="chip_mind">Mindfulness</span>
+          <span class="chip" data-i18n="chip_resp">Respiração</span>
+          <span class="chip" data-i18n="chip_sono">Sono & Recuperação</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORÇA -->
+  <section class="body-section">
+    <div class="body-section-inner reverse">
+      <div class="section-visual reveal-right">
+        <div class="section-visual-bg vis-forca">
+          <div class="vis-lines"></div>
+          <div class="vis-glow"></div>
+          <div class="vis-icon">💪</div>
+          <div class="vis-badge">
+            <div class="vis-badge-dot"></div>
+            <div class="vis-badge-text" data-i18n="badge_forca">MÚSCULO ATIVO</div>
+          </div>
+        </div>
+      </div>
+      <div class="section-text reveal-left">
+        <div class="section-tag" data-i18n="tag_forca">02 — Força</div>
+        <h2 class="section-title">
+          <span data-i18n="title_forca_1">PODER</span><br>
+          <span class="accent" data-i18n="title_forca_2">MUSCULAR</span>
+        </h2>
+        <p class="section-body" data-i18n="body_forca">
+          Protocolos de hipertrofia desenvolvidos com especialistas. Séries, repetições e cargas ajustadas automaticamente ao seu progresso.
+        </p>
+        <div class="section-chips">
+          <span class="chip" data-i18n="chip_hiper">Hipertrofia</span>
+          <span class="chip" data-i18n="chip_forca2">Força Máxima</span>
+          <span class="chip" data-i18n="chip_corp">Composição Corporal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDIO -->
+  <section class="body-section">
+    <div class="body-section-inner">
+      <div class="section-visual reveal-left">
+        <div class="section-visual-bg vis-cardio">
+          <div class="vis-lines"></div>
+          <div class="vis-glow"></div>
+          <div class="vis-icon">❤️</div>
+          <div class="vis-badge">
+            <div class="vis-badge-dot"></div>
+            <div class="vis-badge-text" data-i18n="badge_cardio">BPM 145</div>
+          </div>
+        </div>
+      </div>
+      <div class="section-text reveal-right">
+        <div class="section-tag" data-i18n="tag_cardio">03 — Cardio</div>
+        <h2 class="section-title">
+          <span data-i18n="title_cardio_1">CORAÇÃO</span><br>
+          <span class="accent" data-i18n="title_cardio_2">DE AÇO</span>
+        </h2>
+        <p class="section-body" data-i18n="body_cardio">
+          HIIT, LISS, Steady State — o sistema identifica o treino cardiovascular ideal para seu perfil e objetivo.
+        </p>
+        <div class="section-chips">
+          <span class="chip">HIIT</span>
+          <span class="chip" data-i18n="chip_resist">Resistência</span>
+          <span class="chip" data-i18n="chip_queima">Queima de Gordura</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLEXIBILIDADE -->
+  <section class="body-section">
+    <div class="body-section-inner reverse">
+      <div class="section-visual reveal-right">
+        <div class="section-visual-bg vis-flexi">
+          <div class="vis-lines"></div>
+          <div class="vis-glow"></div>
+          <div class="vis-icon">🤸</div>
+          <div class="vis-badge">
+            <div class="vis-badge-dot"></div>
+            <div class="vis-badge-text" data-i18n="badge_flexi">AMPLITUDE MAX</div>
+          </div>
+        </div>
+      </div>
+      <div class="section-text reveal-left">
+        <div class="section-tag" data-i18n="tag_flexi">04 — Flexibilidade</div>
+        <h2 class="section-title">
+          <span data-i18n="title_flexi_1">CORPO</span><br>
+          <span class="accent" data-i18n="title_flexi_2">LIVRE</span>
+        </h2>
+        <p class="section-body" data-i18n="body_flexi">
+          Mobilidade e flexibilidade que previnem lesões e melhoram performance. Rotinas guiadas por vídeo adaptadas ao seu nível.
+        </p>
+        <div class="section-chips">
+          <span class="chip" data-i18n="chip_mob">Mobilidade</span>
+          <span class="chip" data-i18n="chip_along">Alongamento</span>
+          <span class="chip" data-i18n="chip_yoga">Yoga & Pilates</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECUPERAÇÃO -->
+  <section class="body-section">
+    <div class="body-section-inner">
+      <div class="section-visual reveal-left">
+        <div class="section-visual-bg vis-recup">
+          <div class="vis-lines"></div>
+          <div class="vis-glow"></div>
+          <div class="vis-icon">⚡</div>
+          <div class="vis-badge">
+            <div class="vis-badge-dot"></div>
+            <div class="vis-badge-text" data-i18n="badge_recup">RECUPERAÇÃO 100%</div>
+          </div>
+        </div>
+      </div>
+      <div class="section-text reveal-right">
+        <div class="section-tag" data-i18n="tag_recup">05 — Recuperação</div>
+        <h2 class="section-title">
+          <span data-i18n="title_recup_1">RENASÇA</span><br>
+          <span class="accent" data-i18n="title_recup_2">MAIS FORTE</span>
+        </h2>
+        <p class="section-body" data-i18n="body_recup">
+          O descanso é onde o crescimento acontece. Monitoramento de sono, nutrição e recuperação muscular integrados.
+        </p>
+        <div class="section-chips">
+          <span class="chip" data-i18n="chip_sono2">Sono</span>
+          <span class="chip" data-i18n="chip_nutri">Nutrição</span>
+          <span class="chip" data-i18n="chip_hidrat">Hidratação</span>
+          <span class="chip" data-i18n="chip_descanso">Dias de descanso</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="reveal">
+    <div class="section-tag" data-i18n="feat_tag">Funcionalidades</div>
+    <h2 class="section-title" data-i18n="feat_title">TUDO QUE VOCÊ PRECISA</h2>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card reveal delay-1">
+      <div class="feature-icon">📊</div>
+      <div class="feature-title" data-i18n="f1_title">Progresso em Tempo Real</div>
+      <div class="feature-desc" data-i18n="f1_desc">Dashboards que mostram sua evolução semana a semana com métricas precisas.</div>
+    </div>
+    <div class="feature-card reveal delay-2">
+      <div class="feature-icon">🤖</div>
+      <div class="feature-title" data-i18n="f2_title">IA Personalizada</div>
+      <div class="feature-desc" data-i18n="f2_desc">Algoritmos que aprendem com seu corpo e ajustam os treinos automaticamente.</div>
+    </div>
+    <div class="feature-card reveal delay-3">
+      <div class="feature-icon">🏆</div>
+      <div class="feature-title" data-i18n="f3_title">Comunidade Elite</div>
+      <div class="feature-desc" data-i18n="f3_desc">Conecte-se com atletas e participe de desafios semanais.</div>
+    </div>
+    <div class="feature-card reveal delay-4">
+      <div class="feature-icon">📱</div>
+      <div class="feature-title" data-i18n="f4_title">100% Offline</div>
+      <div class="feature-desc" data-i18n="f4_desc">Seus treinos disponíveis sem internet. Gym, parque ou quarto — sem desculpas.</div>
+    </div>
+  </div>
+</section>
+
+<!-- EARLY ACCESS -->
+<section id="early-access">
+  <div class="reveal">
+    <div class="section-tag" style="justify-content:center" data-i18n="ea_tag">Early Access</div>
+    <h2 class="early-title">
+      <span data-i18n="ea_title_1">SEJA O</span><br>
+      <span class="big-accent" data-i18n="ea_title_2">PRIMEIRO</span>
+    </h2>
+    <p class="early-sub" data-i18n="ea_sub">Garanta acesso antecipado e exclusivo antes do lançamento oficial.</p>
+    <form class="early-form" id="earlyForm">
+      <input type="email" id="earlyEmail" placeholder="seu@email.com" required />
+      <button type="submit" data-i18n="ea_btn">GARANTIR VAGA</button>
+    </form>
+    <p class="early-note" data-i18n="ea_note">✓ Sem spam. ✓ Cancele quando quiser. ✓ Grátis.</p>
+    <div id="success-msg" data-i18n="ea_success">🎉 Você está na lista!</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">CORE<span>LAB</span></div>
+  <div class="footer-spacer"></div>
+  <div class="footer-links">
+    <a href="#" data-i18n="footer_privacy">Política de Privacidade</a>
+    <a href="#" data-i18n="footer_terms">Termos de Uso</a>
+    <a href="#" data-i18n="footer_contact">Contato</a>
+  </div>
+  <div class="footer-copy">
+    © 2026 CoreLab Corporation — UNIP Limeira.
+    <span data-i18n="footer_rights">Todos os direitos reservados.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
