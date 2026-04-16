@@ -4,5 +4,6 @@
   "editor.tabSize": 2,
   "files.eol": "\n",
   "editor.wordWrap": "on",
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.port": 5501
 }
